@@ -4,7 +4,7 @@ LABEL maintainer="realmadsci"
 
 RUN apt-get -y update && apt-get -y upgrade && \
    DEBIAN_FRONTEND=noninteractive apt-get install -y \
-   bash-completion && \
+   bash-completion \
    gdb && \
    apt-get autoremove -y && \
    apt-get clean
