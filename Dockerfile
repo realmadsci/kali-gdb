@@ -5,7 +5,7 @@ LABEL maintainer="realmadsci"
 RUN apt-get -y update && apt-get -y upgrade && \
    DEBIAN_FRONTEND=noninteractive apt-get install -y \
    bash-completion \
-   wget python3 \
+   wget python3-minimal \
    gdb && \
    apt-get autoremove -y && \
    apt-get clean
